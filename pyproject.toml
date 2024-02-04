@@ -1,0 +1,23 @@
+[project]
+name = "AO-Photon-Debugger"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "grantUser", email = "grantuser@skiff.com"},
+]
+dependencies = [
+    "scapy>=2.5.0",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+debugger = "debugger:main"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
